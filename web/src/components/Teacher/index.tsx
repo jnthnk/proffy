@@ -7,7 +7,7 @@ import './styles.css'
 const Teacher = () => (
   <article className="teacher-item">
     <header>
-      <img src={mike} alt="Professor Mike Andrade profile image" />
+      <img src={mike} alt="Professor Mike Andrade profile" />
       <div>
         <strong>Mike Andrade</strong>
         <span>Chemistry</span>
