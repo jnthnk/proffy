@@ -1,20 +1,12 @@
 import express from 'express'
+import routes from './routes'
 
 // Create Express App
 const app = express()
 
-// Enable JSON requests
+// Use JSON and routes
 app.use(express.json())
+app.use(routes)
 
-//
-app.get('/users', (req, res) => {})
-
-//
-app.post('/user', (req, res) => {
-  req.body
-
-  return res.json(false)
-})
-
-// Listen to port 3333 ()
+// Listen to port 3333
 app.listen(3333)
