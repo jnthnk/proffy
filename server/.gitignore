@@ -13,6 +13,9 @@
 
 # database
 .sqlite
+*.sqlite
+.sqlite3
+*.sqlite3
 
 # misc
 .DS_Store
