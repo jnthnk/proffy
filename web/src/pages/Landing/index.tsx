@@ -1,18 +1,24 @@
+// React deps
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+// Images
 import logo from '../../assets/images/logo.svg'
 import landing from '../../assets/images/landing.svg'
 
+// Icons
 import study from '../../assets/images/icons/study.svg'
 import classes from '../../assets/images/icons/give-classes.svg'
 import heart from '../../assets/images/icons/purple-heart.svg'
 
+// Axios
 import api from '../../services/api'
 
+// CSS
 import './styles.css'
 
-function Landing() {
+// 
+const Landing = () => {
   const [connections, setConnections] = useState(0)
 
   useEffect(() => {
