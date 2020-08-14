@@ -97,23 +97,27 @@ routes.post('/class', async (req, res) => {
   }
 })
 
-// 
+//
 routes.get('/connections', async (req, res) => {
-  
+  const connections = await db('connections').count('* as total')
+
+  const { total } = connections[0]
+
+  return res.json({ total })
 })
 
 //
 routes.post('/connection', async (req, res) => {
-  // 
+  //
   const { user_id } = req.body
-  
-  // 
+
+  //
   await db('connections').insert({
-    user_id
+    user_id: Number(user_id)
   })
-  
-  // 
-  return res.status(201)
+
+  //
+  return res.status(201).send()
 })
 
 //
