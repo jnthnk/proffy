@@ -113,7 +113,7 @@ routes.post('/connection', async (req, res) => {
   })
   
   // 
-  return response.status(201)
+  return res.status(201)
 })
 
 //
